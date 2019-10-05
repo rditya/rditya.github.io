@@ -1,0 +1,65 @@
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url("Mock-up.png");
+    background-size: cover;
+    height: 470px;
+    background-color: white !important; 
+}
+
+.icon-margin {
+    margin-left: 5px;
+    color: black;
+}
+
+
+/* Mobile version */
+@media (min-width: 576px) { 
+    .headerku {
+        text-align: center;
+        margin-top: 500px;
+    }
+}
+
+
+/* Dekstop Version */
+@media (min-width: 992px) { 
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 35px;
+        margin-top: 10px;
+    }
+
+    .nav-link:hover{
+        text-shadow: 1px 1px 1px rgba(0, 0 , 0, 0.2);
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid red;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        
+    }
+
+    .nav-putih {
+        color: white !important;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+
+    }
+    
+    .headerku {
+        text-align: center;
+        margin-top: 200px;
+    }
+}
