@@ -5,7 +5,7 @@
 
 /* Jumbotron */
 .jumbotron {
-    background-image: url("Mock-up.png");
+    background-image: url("../header/header.png");
     background-size: cover;
     height: 470px;
     background-color: white !important; 
