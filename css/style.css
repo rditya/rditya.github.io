@@ -4,7 +4,7 @@
 }
 
 /* Jumbotron */
-.jumbotron {
+.header {
     background-image: url("../header/header.png");
     background-size: cover;
     height: 470px;
@@ -14,15 +14,56 @@
 .icon-margin {
     margin-left: 5px;
     color: black;
+    
 }
 
+.headerku {
+    text-align: center;
+    margin-top: 280px;
+    font-size: 12px;
+}
 
-/* Mobile version */
-@media (min-width: 576px) { 
-    .headerku {
-        text-align: center;
-        margin-top: 500px;
-    }
+.headerku h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.headerku h5{
+    font-size: 14px;
+}
+
+.headerku h6{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* About */
+.about {
+    background-image: url("../header/about.png");
+    background-size: cover;
+    height: 700px;
+    margin: auto;
+}
+
+.about-img {
+    width: 250px;
+    border: 5px solid #6274ce;
+    box-shadow: 1px 10px 15px rgba(0, 0 , 0, 0.7);
+}
+
+.about-margin {
+    text-align: center;
+}
+
+.heading-line::after {
+    border-bottom: 3px solid black;
+    width: 50%;
+    margin: auto;
+}
+
+.display-about {
+    text-align: center;
+
 }
 
 
@@ -53,13 +94,30 @@
         color: white !important;
     }
 
-    .jumbotron {
+    .header {
         margin-top: -75px;
+        height: 670px;
 
     }
     
     .headerku {
         text-align: center;
         margin-top: 200px;
+        font-size: 15px;
+
+    }
+
+    .headerku h3{
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .headerku h5{
+        font-size: 16px;
+    }
+    
+    .headerku h6{
+        font-size: 18px;
+        font-weight: lighter;
     }
 }
