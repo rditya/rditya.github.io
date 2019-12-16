@@ -1,0 +1,410 @@
+body{
+    overflow:scroll;
+    
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* background gradient */
+.bubble{
+    background: linear-gradient(30deg, rgba(212, 18, 18, 0.7), rgba(241, 172, 94, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    transform: translateZ(0);
+}
+
+.bubbles li {
+    opacity: 0.1;
+    color: white;
+    position: absolute;
+    list-style: none;
+    display: block;
+    bottom: -250px;
+    animation: square 20s infinite;
+    transition-timing-function: linear;
+}
+
+.bubbles li:nth-child(1) {
+    font-size: 80px;
+    left: 20%;
+}
+
+.bubbles li:nth-child(2) {
+    font-size: 150px;
+    left: 40%;
+    animation-delay: 2s;
+    animation-duration: 17s;
+}
+
+.bubbles li:nth-child(3) {
+    font-size: 40px;
+    left: 60%;
+    animation-delay: 4s;
+    animation-duration: 13s;
+}
+
+.bubbles li:nth-child(4) {
+    font-size: 210px;
+    left: 80%;
+    animation-delay: 1s;
+    animation-duration: 22s;
+}
+
+.bubbles li:nth-child(5) {
+    font-size: 180px;
+    left: 50%;
+    animation-delay: 7s;
+    animation-duration: 12s;
+}
+
+.bubbles li:nth-child(6) {
+    font-size: 255px;
+    left: 5%;
+    animation-delay: 4s;
+    animation-duration: 15s;
+}
+
+.bubbles li:nth-child(7) {
+    font-size: 90px;
+    left: 15%;
+    animation-delay: 9s;
+    animation-duration: 9s;
+}
+
+.bubbles li:nth-child(8) {
+    font-size: 275px;
+    left: 95%;
+    animation-delay: 6s;
+    animation-duration: 15s;
+}
+
+.bubbles li:nth-child(9) {
+    font-size: 195px;
+    left: 65%;
+    animation-delay: 5s;
+    animation-duration: 8s;
+}
+
+.bubbles li:nth-child(10) {
+    font-size: 120px;
+    left: 35%;
+    animation-delay: 7s;
+    animation-duration: 10s;
+}
+
+/* Keyframe bubbel animation */
+
+@keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-1080px) rotate(630deg);
+        -moz-transform: translateY(-1080px) rotate(630deg);
+        transform: translateY(-1080px) rotate(630deg);
+    }
+}
+
+@media (min-width: 992px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .bubble{
+        height: 100%;
+    }
+
+    .container-fluid {
+        width: 90% !important;
+    }
+
+    .container-menu{
+        margin: 6%;
+    }
+
+/* Menu */
+
+    .btn-hamburger {
+        padding: 35px 26px !important;
+    }
+
+    .hamburger {
+        position: relative;
+        top: 50%;
+        display: block;
+        width: 26px;
+        height: 2px;
+        background: #323232;
+    }
+
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:#323232;
+    }
+
+    .hamburger::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -7px;
+        width: 100%;
+        height: 100%;
+        background: #323232;
+    }
+
+    /* Dropdown Menu */
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .top-menu {
+        list-style: none;
+        display: inline;
+        text-align: center;
+        border-radius: 5px;
+        width: 80px;
+        padding: 0 !important;
+        font-size: 12px;
+
+    }
+
+
+    .border-item {
+        background-color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-top: 10px;
+
+    }
+
+    .top-menu a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .top-menu a:hover {
+        text-decoration: none;
+        color: rgba(212, 18, 18, 0.7);
+    }
+
+    /* Profile */
+    .profile {
+        padding-right: 0 !important;
+        z-index: 2;
+        position: absolute;
+        margin-top: -30px;
+        margin-left: -10px;
+
+    }
+
+    .profiles {
+        position: relative;
+        top:-110px;
+        height: 120px;
+    }
+
+    .card-profile {
+        border: none !important;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .sosmed a{
+        margin: 0px 5px;
+        color: black;
+        font-size: 18px;
+    }
+
+    .header-name {
+        font-size: 34px;
+        font-weight: 400;
+        color: black;
+    }
+
+    .sosmed a:hover{
+        text-decoration: none;
+        color: rgba(212, 18, 18, 0.7);
+    }
+
+    .subtitle {
+        color: rgba(212, 18, 18, 0.7);
+    }
+    
+    .profile-button {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        width: 100%;
+        height: 15px;
+        display: flex;
+        flex-direction: row;
+        z-index: 10;
+        text-align: center;
+    }
+    
+    .profile-button:before{
+        content: '';
+        position: absolute; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        background: radial-gradient(ellipse at center,rgba(212, 18, 18, 0.7) 0%,rgba(255,255,255,0) 70%);
+    }
+
+    .button {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        font-size: 14px;
+        color:#323232;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: none;
+        
+    }
+
+    .button:hover {
+        text-decoration: none;
+        color: rgba(212, 18, 18, 0.7);
+    }
+
+    .button:nth-child(1):before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: radial-gradient(ellipse at top,rgba(212, 18, 18, 0.7) 0%,rgba(255,255,255,0) 70%);
+    }
+
+    /* Wallpaper */
+
+    .size-wp {
+        width:auto; 
+        overflow: hidden; 
+        margin:0; 
+        height: 300px;
+        width:100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+    }
+
+    .crop-wp {
+        margin:0;
+        height: 300px;
+        background-image: url('../image/senja.jpg');
+        background-size: 100% 100%;
+        position: absolute;
+        width: 100%;
+        
+    }
+
+    .crop-wp:before{
+        content: '';
+        position: absolute;
+        left:-50%;
+        bottom: -15%;
+        width: 100%;
+        height: 30%;
+        background:#fff;
+        transform: rotate(12deg);
+    }
+
+    .crop-wp:after {
+        content: '';
+        position: absolute;
+        left:50%;
+        bottom: -15%;
+        width: 100%;
+        height: 30%;
+        background:#fff;
+        transform: rotate(-12deg);
+    }
+
+    /* Photo Profile */
+    .size-profile{
+        width:150px;
+        overflow:hidden; 
+        margin:0;  
+        position: relative;
+        top: -120px;
+        border: solid 3px white;
+    }
+    .crop-profile{
+        width:100%; 
+        margin:-25% 0;
+        height: 215px;
+
+    }
+
+    /* content  */
+    .content {
+        padding-left: 0 !important;
+        
+    }
+
+    .card-content {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+
+    .scroll {
+        overflow: scroll;
+        height: 550px;
+    }
+
+    .content-about {
+        margin: 0 15px;
+    }
+
+    .content-title {
+        font-size: 20;
+        font-weight: 600;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .content-title:before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(135deg,rgba(255,44,0,0.4) 0%,rgba(255,255,255,0.1) 100%);
+        border-radius: 50%;
+        position: absolute;
+        top:0px;
+        left:-15px;
+    }
+
+    .content-title:after {
+        content: '';
+        position: absolute;
+        left: -10%;
+        top: 50px;
+        right: 0;
+        background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
+        height: 1px;
+    }
+    
+}
