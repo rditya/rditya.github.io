@@ -1,175 +1,160 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rama Aditya</title>
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="design/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- End Style CSS -->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="design\fa\css\all.css">
-    <!-- End Font Awesome -->
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto|Viga&display=swap" rel="stylesheet"> 
-    <!-- End Fonts -->
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Javascript -->
-    <link rel="stylesheet" href="design/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="design/css/jquery.circliful.css">
-    <!-- End Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet"> 
+
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand nav-putih" href="#">RAMA ADITYA</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active nav-putih" href="#home">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link nav-putih" href="#about">About</a>
-                <a class="nav-item nav-link nav-putih" href="#portofolio">Portofolio</a>
-                <a class="nav-item nav-link" href="#">Hobby</a>
-                <a class="nav-item nav-link" href="#">Biography</a>
+    <div class="bubble">
+        <ul class="bubbles">
+            <li class="fas fa-circle"></li>
+            <li class="fas fa-square"></li>
+            <li class="fas fa-circle"></li>
+            <li class="fas fa-circle"></li>
+            <li class="fas fa-square"></li>
+            <li class="fas fa-circle"></li>
+            <li class="fas fa-circle"></li>
+            <li class="fas fa-square"></li>
+            <li class="fas fa-circle"></li>
+            <li class="fas fa-square"></li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row container-menu">
+            <div class="col-md-1">
+                <div class="dropdown">
+                    <button class="btn btn-hamburger bg-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+        
+                <div class="menu">
+                    <ul class="top-menu card">
+                        <a class="" href="#">
+                            <li class="border-item ">
+                                <ion-icon style="font-size: 20px;" name="person"></ion-icon>
+                                <p>About</p>
+                            </li>
+                        </a>
+        
+                        <a class="" href="#">
+                            <li class="border-item">
+                                <ion-icon style="font-size: 20px;" name="ios-paper"></ion-icon>
+                                <p>Resume</p>
+                            </li>
+                        </a>
+        
+                        <a class="" href="#">
+                            <li class="border-item">
+                                <ion-icon style="font-size: 20px;" name="code"></ion-icon>
+                                <p>Project</p>
+                            </li>
+                        </a>
+        
+                        <a class="" href="#">
+                            <li class="border-item">
+                                <ion-icon style="font-size: 20px;" name="at"></ion-icon>
+                                <p>Contact</p>
+                            </li>
+                        </a>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Akhir navbar -->
 
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid header" id="home">
-        <div class="container headerku">
-            <h6>Hi..!</h6>
-            <h3>AKU RAMA ADITYA</h3>
-            <h5>WEB DEVELOPER / WEB DESIGNER</h5>
-            <br>
-            <a href="https://www.facebook.com/rama7adit" target="_blank" class="fab fa-facebook fa-2x icon-margin"></a>
-            <a href="https://www.instagram.com/ra.radtya" target="_blank" class="fab fa-instagram fa-2x icon-margin"></a>
-            <a href="https://wa.me/6287870631741" target="_blank" class="fab fa-whatsapp fa-2x icon-margin"></a>
-            <a href="https://github.com/rditya" target="_blank" class="fab fa-github fa-2x icon-margin"></a>
-        </div>
-    </div>
-    <!-- Akhir Jumbotron -->
-    
-    <!-- About -->
-    <div class="jumbotron jumbotron-fluid about" id="about">
-        <div class="container">
-            <div class="row">
-                
-                
-                <div class="col-md-8 about-desc about-layout">
-                    <div class="card about-card">
-                        <div class="card-body about-card-body">
-                            <h3 class=" display-about">about</h3>
-                        </div>
+            <div class="col-md-5 profile">
+                <div class="card card-profile">
+                    <div class="size-wp">
+                        <div class="crop-wp"></div>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text about-text">Hai, aku <span class="desc">Rama Aditya</span> biasa di panggil <span class="desc">Rama</span>. Usiaku sekarang 18th dan 
-                                sekarang tinggal di <span class="desc">Sidoarjo</span>, Aku mulai suka pemrogram sejak duduk di bangku SMK 
-                                dan mulai menekuni hingga sekarang. Oh ya, aku biasanya sering memakai bahasa 
-                                pemrograman PHP bukan Perusak Hubungan Orang ya hehe, dan mulai mengenal yang 
-                                namanya Framework sejak magang di <span class="desc">Quantum Leap</span>. Framework pertamaku itu <span class="desc">Laravel</span>,
-                                aku mulai mempelajari sistem Laravel dari versi 5.5 hingga versi terbaru sekarang</span>
-                            </p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, animi et nihil placeat itaque maiores facere quia velit? Provident earum nisi recusandae expedita necessitatibus beatae illum, aut labore maxime dolorum.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 about-margin about-layout">
-                    <div class="card about-card">
-                        <div class="card-body about-card-body">
-                            <h1 class=" display-about">profile</h1>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body about-text">
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <img class="rounded-circle about-img" src="header/about-profile.jpg"  alt="">
+                    <div class="card-body">
+                        <center>
+                            <div class="size-profile rounded-circle">
+                                <img src="image/profile-me.jpeg"  alt="Photo Profile" class="crop-profile">
+                            </div>
+                            <div class="row profiles">
+                                <div class="col-md-12">
+                                <div class="header-name">
+                                    Rama Aditya
+                                </div>
+                                <div class="subtitle">
+                                    <p>Freelancer</p>
+                                </div>
+                                
+                                <div class="sosmed">
+                                    <a href="#">
+                                        <span class="fab fa-github"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fab fa-instagram"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fab fa-facebook"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fas fa-paper-plane"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fab fa-stack-overflow"></span>
+                                    </a>
+                                </div>
                                 </div>
                             </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="profile-text">
-                                        <p><b>Nama</b> : Rama Aditya </p>
-                                        <p><b>Date of Birth</b> : 07-Feb-2001 </p>
-                                        <p><b>Nationality </b> : Indonesian</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Akhir About -->
-    <!-- Portofolio -->
-    <div id="portofolio" class="jumbotron portofolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card about-card">
-                        <div class="card-body about-card-body">
-                            <h3 class=" display-about">education</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body ">
-                            <p class="card-text about-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            <p class="card-text about-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            <p class="card-text about-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card about-card">
-                        <div class="card-body about-card-body">
-                            <h3 class=" display-about">skill</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row about-text" >
-                                <div class="col-md-3">
-                                    <div id="html" class="chart"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div id="css" class="chart"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div id="php7" class="chart"></div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div id="laravel" class="chart"></div>
-                                </div>
-                            </div>
+                        </center>
+                        <div class="profile-button">
+                            <a class="button" href="#">Profile</a>
+                            <a class="button" href="#">Contact me</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-6 content">
+                <div class="card card-content">
+                    <div class="card-body scroll">
+                        <div class="content-about">
+
+                            <div class="content-title">
+                                <span style="color:#F1AC5E;">About</span> Me
+                            </div>
+                            <div class="row" style="margin-top: 60px;">
+                                <div class="col-md-12">
+                                    <strong>Halo, Saya Rama Aditya</strong><br>
+                                    <p>lorem</p>
+                                <div class="col-md-12"></div>
+                                <div style="margin-bottom: 50px;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        
     </div>
-
-    <!-- Chart -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="design/js/jquery.circliful.js"></script>
-    <script src="design/chart.js"></script>
-    <!-- end Chart -->
-    <!-- End Portofolio -->
-
+    <!-- Javascript -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
+
 </html>
