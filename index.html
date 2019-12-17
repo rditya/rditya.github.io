@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio</title>
     <!-- CSS -->
     <link rel="stylesheet" href="design/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -12,14 +12,16 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet"> 
 
@@ -42,37 +44,46 @@
     </div>
     <div class="container-fluid">
         <div class="row container-menu">
-            <div class="col-md-1">
+            <div class="col-md-1" style="z-index: 3;">
                 <div class="dropdown">
-                    <button class="btn btn-hamburger bg-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="hamburger"></span>
-                    </button>
+                    
+                    <div class="menu">
+                        <ul class="top-menu card">
+                            <a class="card-menu" href="#">
+                                <li class="border-item ">
+                                    <ion-icon style="font-size: 20px;" name="person"></ion-icon>
+                                    <p>About</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+
                 </div>
         
                 <div class="menu">
                     <ul class="top-menu card">
-                        <a class="" href="#">
+                        <a class="card-menu" href="#">
                             <li class="border-item ">
                                 <ion-icon style="font-size: 20px;" name="person"></ion-icon>
                                 <p>About</p>
                             </li>
                         </a>
         
-                        <a class="" href="#">
+                        <a class="card-menu" href="#">
                             <li class="border-item">
                                 <ion-icon style="font-size: 20px;" name="ios-paper"></ion-icon>
                                 <p>Resume</p>
                             </li>
                         </a>
         
-                        <a class="" href="#">
+                        <a class="card-menu" href="#">
                             <li class="border-item">
                                 <ion-icon style="font-size: 20px;" name="code"></ion-icon>
                                 <p>Project</p>
                             </li>
                         </a>
         
-                        <a class="" href="#">
+                        <a class="card-menu" href="#">
                             <li class="border-item">
                                 <ion-icon style="font-size: 20px;" name="at"></ion-icon>
                                 <p>Contact</p>
@@ -132,20 +143,71 @@
             <div class="col-md-6 content">
                 <div class="card card-content">
                     <div class="card-body scroll">
+                        
                         <div class="content-about">
-
                             <div class="content-title">
                                 <span style="color:#F1AC5E;">About</span> Me
                             </div>
                             <div class="row" style="margin-top: 60px;">
                                 <div class="col-md-12">
                                     <strong>Halo, Saya Rama Aditya</strong><br>
-                                    <p>lorem</p>
+                                    <p>biasa di panggil Rama. Aku mulai suka pemrograman sejak duduk 
+                                        di bangku SMK dan mulai menekuni hingga sekarang, sudah mulai banyak
+                                        bahasa pemrograman yang kupelajari mulai php,javascript sampai ke tingkat framework
+                                        seperti Laravel dan Vue JS, impianku adalah untuk menjadi FullStack Developer.
+                                    </p>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-6"><strong>Age</strong> : 18th</div>
+                                        <div class="col-md-6"><strong>City</strong> : Surabaya</div>
+                                        <div class="col-md-6"><strong>Date</strong> : 07 February 2001</div>
+                                        <div class="col-md-6"><strong>Address</strong> : Indonesia</div>
+                                    </div>
+                                </div>
+                                <div style="margin-bottom: 50px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="content-about">
+                            <div class="content-title">
+                                <span style="color:#F1AC5E;">Hobby</span>
+                            </div>
+                            <div class="row" style="margin-top: 60px;">
+                                <div class="col-md-12">
+                                    <div class="portfolio-menu">
+                                        <ul>
+                                            <li class="active" data-filter="*">Semua</li>
+                                            <li data-filter=".game">Game</li>
+                                            <li data-filter=".culture">Culture</li>
+                                            <li data-filter=".knowledge">Knowledge</li>
+                                        </ul>
+                                    </div>
+                                    <div class="portfolio-item" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
+                                        <div class="item game">
+                                            <img class="img-item" src="image/game.png" width="150" height="150" alt="">
+                                            <div class="img-hover">
+                                                <div class="img-text">Gaming</div>
+                                            </div>
+                                        </div>
+                                        <div class="item culture">
+                                            <img class="img-item" src="image/culture.jpg" width="150" height="150" alt="">
+                                            <div class="img-hover">
+                                                <div class="img-text">Culture</div>
+                                            </div>
+                                        </div>
+                                        <div class="item knowledge">
+                                            <img class="img-item" src="image/knowledge.jpg" width="150" height="150" alt="">
+                                            <div class="img-hover">
+                                                <div class="img-text">Knowledge</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 <div class="col-md-12"></div>
                                 <div style="margin-bottom: 50px;"></div>
                             </div>
-
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -155,6 +217,30 @@
     </div>
     <!-- Javascript -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script>
+        var $grid = $('.portfolio-item').isotope({
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+        
+        $(document).ready(function($){
+            $('.portfolio-menu ul li').click(function (e) {
+                $("li").removeClass('active');
+                $(this).addClass('active');
+                e.stopPropagation();
+                var selector = $(this).attr('data-filter');
+                
+                $grid.isotope({
+                    filter: selector
+                });
+                return false;
+            });
+        });
+
+
+        var jquery = $.noConflict(true);
+    </script>
 </body>
 
 </html>
