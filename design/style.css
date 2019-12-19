@@ -8,6 +8,16 @@ body{
 }
 
 /* background gradient */
+.bubble2{
+    background: linear-gradient(30deg,#17171b 0%,#28282f 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+}
+
 .bubble{
     background: linear-gradient(30deg, rgba(212, 18, 18, 0.7), rgba(241, 172, 94, 1));
     position: absolute;
@@ -19,7 +29,7 @@ body{
 }
 
 .bubbles li {
-    opacity: 0.1;
+    opacity: 0.065;
     color: white;
     position: absolute;
     list-style: none;
@@ -181,7 +191,6 @@ body{
 }
 
 .border-item {
-    background-color: white;
     margin-top: 10px;
     border-bottom:solid 1px rgba(0, 0, 0, 0.2);
 }
@@ -219,6 +228,12 @@ body{
     overflow: hidden;
     box-shadow: -20px -20px rgba(212, 18, 18, 0.2);
 }
+
+.card-profile.changed {
+    box-shadow: -20px -20px rgba(33, 33, 39, 0.85);
+}
+
+
 
 .sosmed a{
     margin: 0px 5px;
@@ -263,6 +278,10 @@ body{
     background: radial-gradient(ellipse at center,rgba(212, 18, 18, 0.7) 0%,rgba(255,255,255,0) 70%);
 }
 
+.profile-button.changed:before{
+    background: radial-gradient(ellipse at center,rgba(200, 34, 200,1) 0%,rgba(255,255,255,0) 70%);
+}
+
 .button {
     position: relative;
     display: block;
@@ -284,6 +303,10 @@ body{
     color: rgba(212, 18, 18, 0.7);
 }
 
+/* .button.changed:hover {
+    color: rgba(200, 34, 200, 1);
+} */
+
 .button:nth-child(1):before{
     content: '';
     position: absolute;
@@ -292,6 +315,10 @@ body{
     width: 1px;
     height: 100%;
     background: radial-gradient(ellipse at top,rgba(212, 18, 18, 0.7) 0%,rgba(255,255,255,0) 70%);
+}
+
+.button.changed:nth-child(1):before{
+    background: radial-gradient(ellipse at top,rgba(200, 34, 200, 1) 0%,rgba(255,255,255,0) 70%);
 }
 
 /* Wallpaper */
@@ -328,6 +355,12 @@ body{
     transform: rotate(12deg);
 }
 
+.crop-wp.changed:before{
+    background:#31313A;
+}
+
+
+
 .crop-wp:after {
     content: '';
     position: absolute;
@@ -337,6 +370,11 @@ body{
     height: 30%;
     background:#fff;
     transform: rotate(-12deg);
+}
+
+.crop-wp.changed:after {
+
+    background:#31313A;
 }
 
 /* Photo Profile */
@@ -367,12 +405,14 @@ body{
     border-bottom-left-radius: 0 !important;
     padding-top: 15px;
     padding-bottom: 15px;
-}
-
-.scroll {
     overflow: scroll;
     overflow-x: hidden;
-    height: 520px;
+    height: 550px;
+    position: absolute !important;
+    top:0;
+    right: 0;
+    left: 0;
+    border: 0 !important;
 }
 
 .content-about {
@@ -405,6 +445,12 @@ body{
     right: 0;
     background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
     height: 1px;
+}
+
+.content-title.changed:after {
+    content: '';
+    position: absolute;
+    background: radial-gradient(ellipse at left, rgb(200, 34, 200) 0%, rgba(255, 255, 255, 0) 70%);
 }
 
 .portfolio-menu {
@@ -511,6 +557,7 @@ li.active {
     z-index: 1;
     font-size: 30px;
     color: rgba(212, 18, 18, 0.7);
+    border-top: 0 !important;
 }
 
 .text-quote{
@@ -529,6 +576,73 @@ li.active {
     height: 100px;
 }
 
+/* Slide animation */
+
+.hidden {
+    /* visibility: hidden; */
+    z-index:0;
+}
+
+.show {
+    z-index: 1;
+}
+
+.animated {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translate3d(-70%,0,0);
+
+    }
+}
+
+.fadeOutLeft {
+    animation-name: fadeOutLeft;
+}
+
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-70%,0,0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+
+    }
+}
+
+/* Change color */
+.color1 {
+    width: 35px;
+    height: 35px !important;
+    background: linear-gradient(30deg, rgba(212, 18, 18, 0.7), rgba(241, 172, 94, 1));
+    margin-bottom: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.color2{
+    width: 35px;
+    height: 35px !important;
+    background: linear-gradient(30deg,#17171b 0%,#472360 100%) ;
+    margin-bottom: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+
+}
 
 
     @media (max-width: 768px) {

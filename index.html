@@ -49,10 +49,29 @@
                     
                     <div class="menu">
                         <ul class="top-menu card">
-                            <a class="card-menu" href="#">
-                                <li class="border-item ">
-                                    <ion-icon style="font-size: 20px;" name="person"></ion-icon>
+                            <a class="card-menu transisi" data-toggle="collapse" href="#pick-color" role="button" aria-expanded="false" aria-controls="color">
+                                <li class="border-item change-color dark-hover">
+                                    <ion-icon style="font-size: 20px;" name="color-palette"></ion-icon>
                                     <p>Color</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="menu collapse" id="pick-color">
+                        <ul class="top-menu card">
+                            <a class="card-menu" id="color1" href="#">
+                                <li class="border-item ">
+                                    <center>
+                                        <div class="color1 img-thumbnail"></div>
+                                    </center>
+                                </li>
+                            </a>
+                            <a class="card-menu" id="color2" href="#">
+                                <li class="border-item ">
+                                    <center>
+                                        <div class="color2 img-thumbnail"></div>
+                                    </center>
                                 </li>
                             </a>
                         </ul>
@@ -62,29 +81,29 @@
         
                 <div class="menu">
                     <ul class="top-menu card">
-                        <a class="card-menu" href="#">
-                            <li class="border-item ">
+                        <a id="about" class="card-menu" href="#">
+                            <li class="border-item change-color dark-hover">
                                 <ion-icon style="font-size: 20px;" name="person"></ion-icon>
                                 <p>About</p>
                             </li>
                         </a>
         
-                        <a class="card-menu" href="#">
-                            <li class="border-item">
+                        <a id="resume" class="card-menu" href="#">
+                            <li class="border-item change-color dark-hover">
                                 <ion-icon style="font-size: 20px;" name="ios-paper"></ion-icon>
                                 <p>Resume</p>
                             </li>
                         </a>
         
                         <a class="card-menu" href="#">
-                            <li class="border-item">
+                            <li class="border-item change-color dark-hover">
                                 <ion-icon style="font-size: 20px;" name="code"></ion-icon>
                                 <p>Project</p>
                             </li>
                         </a>
         
                         <a class="card-menu" href="#">
-                            <li class="border-item">
+                            <li class="border-item change-color dark-hover">
                                 <ion-icon style="font-size: 20px;" name="at"></ion-icon>
                                 <p>Contact</p>
                             </li>
@@ -96,7 +115,7 @@
             <div class="col-md-5 profile">
                 <div class="card card-profile">
                     <div class="size-wp">
-                        <div class="crop-wp"></div>
+                        <div id="changed-after" class="crop-wp"></div>
                     </div>
                     <div class="card-body">
                         <center>
@@ -105,27 +124,27 @@
                             </div>
                             <div class="row profiles">
                                 <div class="col-md-12">
-                                <div class="header-name">
+                                <div class="header-name change-color">
                                     Rama Aditya
                                 </div>
-                                <div class="subtitle">
+                                <div class="subtitle switch-color">
                                     <p>Freelancer</p>
                                 </div>
                                 
                                 <div class="sosmed">
-                                    <a href="#">
+                                    <a href="#" class="change-color dark-hover">
                                         <span class="fab fa-github"></span>
                                     </a>
-                                    <a href="#">
+                                    <a href="#" class="change-color dark-hover">
                                         <span class="fab fa-instagram"></span>
                                     </a>
-                                    <a href="#">
+                                    <a href="#" class="change-color dark-hover">
                                         <span class="fab fa-facebook"></span>
                                     </a>
-                                    <a href="#">
+                                    <a href="#" class="change-color dark-hover">
                                         <span class="fas fa-paper-plane"></span>
                                     </a>
-                                    <a href="#">
+                                    <a href="#" class="change-color dark-hover">
                                         <span class="fab fa-stack-overflow"></span>
                                     </a>
                                 </div>
@@ -133,49 +152,52 @@
                             </div>
                         </center>
                         <div class="profile-button">
-                            <a class="button" href="#">Profile</a>
-                            <a class="button" href="#">Contact me</a>
+                            <a class="button change-color dark-hover" href="#">Profile</a>
+                            <a class="button change-color dark-hover" href="#">Contact me</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 content">
-                <div class="card card-content">
-                    <div class="card-body scroll">
-                        
-                        <div class="content-about">
+                <!-- Content About -->
+                <div id="card-about" class="card card-content animated show">
+                    <div id="hide" class="card-body ">
+                        <!-- About Me -->
+                        <div class="content-about ">
                             <div class="content-title">
-                                <span style="color:#F1AC5E;">About</span> Me
+                                <span class="switch-color" style="color:#F1AC5E;">About</span><span class="change-color"> Me</span>
                             </div>
                             <div class="row" style="margin-top: 60px;">
                                 <div class="col-md-12">
-                                    <strong>Halo, Saya Rama Aditya</strong><br>
-                                    <p>biasa di panggil Rama. Aku mulai suka pemrograman sejak duduk 
-                                        di bangku SMK dan mulai menekuni hingga sekarang, sudah mulai banyak
-                                        bahasa pemrograman yang kupelajari mulai php,javascript sampai ke tingkat framework
-                                        seperti Laravel dan Vue JS, impianku adalah untuk menjadi FullStack Developer.
-                                    </p>
+                                    <span class="opacity-color">
+                                        <strong>Halo, Saya Rama Aditya</strong><br>
+                                        <p>biasa di panggil Rama. Aku mulai suka pemrograman sejak duduk 
+                                            di bangku SMK dan mulai menekuni hingga sekarang, sudah mulai banyak
+                                            bahasa pemrograman yang kupelajari mulai php,javascript sampai ke tingkat framework
+                                            seperti Laravel dan Vue JS, impianku adalah untuk menjadi FullStack Developer.
+                                        </p>
+                                    </span>
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-6"><strong>Age</strong> : 18th</div>
-                                        <div class="col-md-6"><strong>City</strong> : Surabaya</div>
-                                        <div class="col-md-6"><strong>Date</strong> : 07 February 2001</div>
-                                        <div class="col-md-6"><strong>Address</strong> : Indonesia</div>
+                                        <div class="col-md-6 change-color" ><strong>Age</strong> : 18th</div>
+                                        <div class="col-md-6 change-color"><strong>City</strong> : Surabaya</div>
+                                        <div class="col-md-6 change-color"><strong>Date</strong> : 07 February 2001</div>
+                                        <div class="col-md-6 change-color"><strong>Address</strong> : Indonesia</div>
                                     </div>
                                 </div>
                                 <div style="margin-bottom: 50px;"></div>
                             </div>
                         </div>
-
+                        <!-- Hobby Me -->
                         <div class="content-about">
                             <div class="content-title">
-                                <span style="color:#F1AC5E;">Hobby</span>
+                                <span class="switch-color" style="color:#F1AC5E;">Hobby</span>
                             </div>
                             <div class="row" style="margin-top: 60px;">
                                 <div class="col-md-12">
-                                    <div class="portfolio-menu">
-                                        <ul>
+                                    <div class="portfolio-menu" class="change-color">
+                                        <ul class="change-color">
                                             <li class="active" data-filter="*">Semua</li>
                                             <li data-filter=".game">Game</li>
                                             <li data-filter=".culture">Culture</li>
@@ -207,14 +229,14 @@
                                 <div style="margin-bottom: 50px;"></div>
                             </div>
                         </div>
-
+                        <!-- Quotes -->
                         <div class="content-about">
                             <div class="content-title">
-                                <span style="color:#F1AC5E;">Quotes</span>
-                                <div class="circle-quote"><ion-icon name="quote"></ion-icon></div>
+                                <span class="switch-color" style="color:#F1AC5E;">Quotes</span>
+                                <div  class="circle-quote "><ion-icon name="quote"></ion-icon></div>
                             </div>
                             <div class="row" style="margin-top: 60px;">
-                                <div class="text-quote">
+                                <div class="text-quote opacity-color">
                                     <p>
                                         <span class="fas fa-quote-left"></span>&nbsp;
                                         Gantungkan cita-cita mu setinggi langit! Bermimpilah setinggi langit. 
@@ -233,7 +255,21 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Resume  -->
+            <div id="card-resume" class="card card-content animated hidden">
+                <div class="card-body" >
+                    <!-- Test -->
+                    <div class="content-about">
+                        <div class="content-title">
+                            <span class="switch-color" style="color:#F1AC5E;">Resume</span>
+                        </div>
+                        <div class="row" style="margin-top: 60px;">
+                            
+                            <div style="margin-bottom: 50px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </div>
@@ -257,6 +293,72 @@
                     filter: selector
                 });
                 return false;
+            });
+
+            $('#resume').click(function (e){
+                // $('#card-about').removeClass('card-content');
+                // $('#card-about').removeClass('card');
+                $('#card-about').removeClass('fadeOutLeft');
+                $('#card-about').removeClass('show');
+                $('#card-about').addClass('fadeInLeft');
+                $('#card-about').addClass('hidden');
+
+                $('#card-resume').removeClass('fadeInLeft');
+                $('#card-resume').removeClass('hidden');
+                $('#card-resume').addClass('fadeOutLeft');
+                $('#card-resume').addClass('show');
+
+                e.preventDefault();
+            });
+
+            $('#about').click(function (e){
+                // $('#card-about').removeClass('card-content');
+                // $('#card-about').removeClass('card');
+                $('#card-about').removeClass('fadeInLeft');
+                $('#card-about').removeClass('hidden');
+                $('#card-about').addClass('fadeOutLeft');
+                $('#card-about').addClass('show');
+
+                $('#card-resume').removeClass('fadeOutLeft');
+                $('#card-resume').removeClass('show');
+                $('#card-resume').addClass('fadeInLeft');
+                $('#card-about').addClass('hidden');
+
+                e.preventDefault();
+            });
+
+            $('#color1').click(function(e){
+                $('.bubble').css('background', 'linear-gradient(30deg, rgba(212, 18, 18, 0.7), rgba(241, 172, 94, 1))');
+                e.preventDefault();
+
+            });
+
+            $('#color2').click(function(e){
+                // $('#bg-color').removeClass('bubble');
+                $('.bubble').css('background','linear-gradient(30deg,#17171b 0%,#28282f 100%)');
+                $('.card').css('background-color', '#31313A');
+                $('.card-profile').addClass('changed');
+                $('.change-color').css('color','rgba(255,255,255,.85)');
+                $('.dark-hover').hover(function(){
+                    $(this).css('color','rgba(200, 34, 200,1)');
+                    }, function() {
+                        $(this).css('color','rgba(255,255,255,.85)');
+                    });
+                $('.opacity-color').css('color','rgba(255,255,255,.65)');
+                $('#changed-after').addClass('changed');
+                $('.switch-color').css('color','rgb(200, 34, 200)');
+                $('.circle-quote').css({'background-color':'#31313A','color':'rgb(200, 34, 200)', 'border':'1px solid rgba(200, 34, 200, .4)'});
+                $('.content-title').addClass('changed');
+                $('.profile-button').addClass('changed');
+                $('.button').addClass('changed');
+                $('.button').hover(function(){
+                    $(this).css('color', 'rgba(200, 34, 200,1)');
+                    }, function() {
+                        $(this).css('color','rgba(255,255,255,.85)');
+                    });
+
+                e.preventDefault();
+
             });
         });
 
