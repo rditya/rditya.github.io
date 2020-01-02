@@ -28,6 +28,19 @@
 </head>
 
 <body>
+    <!-- <div class="preload">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div> -->
     <div class="bubble">
         <ul class="bubbles">
             <li class="fas fa-circle"></li>
@@ -49,8 +62,8 @@
                     
                     <div class="menu">
                         <ul class="top-menu card">
-                            <a class="card-menu transisi" data-toggle="collapse" href="#pick-color" role="button" aria-expanded="false" aria-controls="color">
-                                <li class="border-item change-color dark-hover">
+                            <a class="card-menu " data-toggle="collapse" href="#pick-color" role="button" aria-expanded="false" aria-controls="color">
+                                <li class="border-item change-color dark-hover transition">
                                     <ion-icon style="font-size: 20px;" name="color-palette"></ion-icon>
                                     <p>Color</p>
                                 </li>
@@ -82,28 +95,28 @@
                 <div class="menu">
                     <ul class="top-menu card">
                         <a id="about" class="card-menu" href="#">
-                            <li class="border-item change-color dark-hover">
+                            <li class="border-item change-color dark-hover transition">
                                 <ion-icon style="font-size: 20px;" name="person"></ion-icon>
                                 <p>About</p>
                             </li>
                         </a>
         
                         <a id="resume" class="card-menu" href="#">
-                            <li class="border-item change-color dark-hover">
+                            <li class="border-item change-color dark-hover transition">
                                 <ion-icon style="font-size: 20px;" name="ios-paper"></ion-icon>
                                 <p>Resume</p>
                             </li>
                         </a>
         
-                        <a class="card-menu" href="#">
-                            <li class="border-item change-color dark-hover">
+                        <a id="project" class="card-menu" href="#">
+                            <li class="border-item change-color dark-hover transition">
                                 <ion-icon style="font-size: 20px;" name="code"></ion-icon>
                                 <p>Project</p>
                             </li>
                         </a>
         
-                        <a class="card-menu" href="#">
-                            <li class="border-item change-color dark-hover">
+                        <a id="contact" class="card-menu" href="#">
+                            <li class="border-item change-color dark-hover transition">
                                 <ion-icon style="font-size: 20px;" name="at"></ion-icon>
                                 <p>Contact</p>
                             </li>
@@ -132,19 +145,19 @@
                                 </div>
                                 
                                 <div class="sosmed">
-                                    <a href="#" class="change-color dark-hover">
+                                    <a href="#" class="change-color dark-hover transition">
                                         <span class="fab fa-github"></span>
                                     </a>
-                                    <a href="#" class="change-color dark-hover">
+                                    <a href="#" class="change-color dark-hover transition">
                                         <span class="fab fa-instagram"></span>
                                     </a>
-                                    <a href="#" class="change-color dark-hover">
+                                    <a href="#" class="change-color dark-hover transition">
                                         <span class="fab fa-facebook"></span>
                                     </a>
-                                    <a href="#" class="change-color dark-hover">
+                                    <a href="#" class="change-color dark-hover transition">
                                         <span class="fas fa-paper-plane"></span>
                                     </a>
-                                    <a href="#" class="change-color dark-hover">
+                                    <a href="#" class="change-color dark-hover transition">
                                         <span class="fab fa-stack-overflow"></span>
                                     </a>
                                 </div>
@@ -152,8 +165,8 @@
                             </div>
                         </center>
                         <div class="profile-button">
-                            <a class="button change-color dark-hover" href="#">Profile</a>
-                            <a class="button change-color dark-hover" href="#">Contact me</a>
+                            <a class="button change-color dark-hover transition" href="#">Profile</a>
+                            <a class="button change-color dark-hover transition" href="#">Contact me</a>
                         </div>
                     </div>
                 </div>
@@ -270,101 +283,44 @@
                     </div>
                 </div>
             </div>
+            <!-- project  -->
+            <div id="card-project" class="card card-content animated hidden">
+                <div class="card-body" >
+                    <!-- Test -->
+                    <div class="content-about">
+                        <div class="content-title">
+                            <span class="switch-color" style="color:#F1AC5E;">Project</span>
+                        </div>
+                        <div class="row" style="margin-top: 60px;">
+                            
+                            <div style="margin-bottom: 50px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact  -->
+            <div id="card-contact" class="card card-content animated hidden">
+                <div class="card-body" >
+                    <!-- Test -->
+                    <div class="content-about">
+                        <div class="content-title">
+                            <span class="switch-color" style="color:#F1AC5E;">Contact</span>
+                        </div>
+                        <div class="row" style="margin-top: 60px;">
+                            
+                            <div style="margin-bottom: 50px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         
     </div>
     <!-- Javascript -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-    <script>
-        var $grid = $('.portfolio-item').isotope({
-            itemSelector: '.item',
-            layoutMode: 'fitRows'
-        });
-        
-        $(document).ready(function($){
-            $('.portfolio-menu ul li').click(function (e) {
-                $("li").removeClass('active');
-                $(this).addClass('active');
-                e.stopPropagation();
-                var selector = $(this).attr('data-filter');
-                
-                $grid.isotope({
-                    filter: selector
-                });
-                return false;
-            });
-
-            $('#resume').click(function (e){
-                // $('#card-about').removeClass('card-content');
-                // $('#card-about').removeClass('card');
-                $('#card-about').removeClass('fadeOutLeft');
-                $('#card-about').removeClass('show');
-                $('#card-about').addClass('fadeInLeft');
-                $('#card-about').addClass('hidden');
-
-                $('#card-resume').removeClass('fadeInLeft');
-                $('#card-resume').removeClass('hidden');
-                $('#card-resume').addClass('fadeOutLeft');
-                $('#card-resume').addClass('show');
-
-                e.preventDefault();
-            });
-
-            $('#about').click(function (e){
-                // $('#card-about').removeClass('card-content');
-                // $('#card-about').removeClass('card');
-                $('#card-about').removeClass('fadeInLeft');
-                $('#card-about').removeClass('hidden');
-                $('#card-about').addClass('fadeOutLeft');
-                $('#card-about').addClass('show');
-
-                $('#card-resume').removeClass('fadeOutLeft');
-                $('#card-resume').removeClass('show');
-                $('#card-resume').addClass('fadeInLeft');
-                $('#card-about').addClass('hidden');
-
-                e.preventDefault();
-            });
-
-            $('#color1').click(function(e){
-                $('.bubble').css('background', 'linear-gradient(30deg, rgba(212, 18, 18, 0.7), rgba(241, 172, 94, 1))');
-                e.preventDefault();
-
-            });
-
-            $('#color2').click(function(e){
-                // $('#bg-color').removeClass('bubble');
-                $('.bubble').css('background','linear-gradient(30deg,#17171b 0%,#28282f 100%)');
-                $('.card').css('background-color', '#31313A');
-                $('.card-profile').addClass('changed');
-                $('.change-color').css('color','rgba(255,255,255,.85)');
-                $('.dark-hover').hover(function(){
-                    $(this).css('color','rgba(200, 34, 200,1)');
-                    }, function() {
-                        $(this).css('color','rgba(255,255,255,.85)');
-                    });
-                $('.opacity-color').css('color','rgba(255,255,255,.65)');
-                $('#changed-after').addClass('changed');
-                $('.switch-color').css('color','rgb(200, 34, 200)');
-                $('.circle-quote').css({'background-color':'#31313A','color':'rgb(200, 34, 200)', 'border':'1px solid rgba(200, 34, 200, .4)'});
-                $('.content-title').addClass('changed');
-                $('.profile-button').addClass('changed');
-                $('.button').addClass('changed');
-                $('.button').hover(function(){
-                    $(this).css('color', 'rgba(200, 34, 200,1)');
-                    }, function() {
-                        $(this).css('color','rgba(255,255,255,.85)');
-                    });
-
-                e.preventDefault();
-
-            });
-        });
-
-
-        var jquery = $.noConflict(true);
-    </script>
+    <script src="design/script.js"></script>
 </body>
 
 </html>
