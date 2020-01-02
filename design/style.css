@@ -262,11 +262,13 @@ body{
 .border-item {
     margin-top: 10px;
     border-bottom:solid 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .top-menu a {
     text-decoration: none;
     color: #000;
+
 }
 
 .top-menu a:hover {
