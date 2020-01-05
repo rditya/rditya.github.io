@@ -146,6 +146,15 @@ $(document).ready(function($){
         $('.profile-button').removeClass('changed');
         $('.button').removeClass('changed');
         $('.size-profile').css({'box-shadow' : '-10px 10px rgba(212, 18, 18, 0.2)'});
+        $('.date').css({'border' : '1px solid #eee', 'color':'#ccc'});
+        $('.resume-active').css({'border' : '1px solid rgba(212, 18, 18, 0.7)', 'color':'rgba(212, 18, 18, 0.7)'});
+        $('.resume-item').removeClass('changed');
+        $('.resume-title').removeClass('changed');
+        $('.border-line-v').removeClass('changed');
+        $('.icon').css('color','rgba(212, 18, 18, 0.7)');
+        $('.percentage').css('background-color','rgba(212, 18, 18, 0.7)');
+        $('.progress').css('background-color','#e9ecef');
+
 
         e.preventDefault();
 
@@ -169,9 +178,70 @@ $(document).ready(function($){
         $('.profile-button').addClass('changed');
         $('.button').addClass('changed');
         $('.size-profile').css({'box-shadow' : '-10px 10px rgba(200, 34, 200, 0.2)'});
+        $('.date').css({'border' : '1px solid #666', 'color':'#666'});
+        $('.resume-active').css({'border' : '1px solid rgb(200, 34, 200)', 'color':'rgb(200, 34, 200)'});
+        $('.resume-item').addClass('changed');
+        $('.resume-title').addClass('changed');
+        $('.border-line-v').addClass('changed');
+        $('.icon').css('color','rgb(200, 34, 200)');
+        $('.progress').css('background-color','rgba(102, 102, 102, .55)');
+        $('.percentage').css('background-color','rgb(200, 34, 200)');
+
 
         e.preventDefault();
 
+    });
+
+    $("#html").circliful({
+        animation: 1,
+        animationStep: 5,
+        foregroundBorderWidth: 15,
+        foregroundColor: "rgba(212, 18, 18, 0.7)",
+        backgroundBorderWidth: 15,
+        backgroundColor: "#E9ECEF",
+        percent: 95,
+        textSize: 28,
+        textStyle: 'font-size: 18px;',
+        textY: '107'
+    });
+
+    $("#css").circliful({
+        animation: 1,
+        animationStep: 5,
+        foregroundBorderWidth: 15,
+        foregroundColor: "rgba(212, 18, 18, 0.7)",
+        backgroundBorderWidth: 15,
+        backgroundColor: "#E9ECEF",
+        percent: 80,
+        textSize: 28,
+        textStyle: 'font-size: 18px;',
+        textY: '107'
+    });
+
+    $("#php").circliful({
+        animation: 1,
+        animationStep: 5,
+        foregroundBorderWidth: 15,
+        foregroundColor: "rgba(212, 18, 18, 0.7)",
+        backgroundBorderWidth: 15,
+        backgroundColor: "#E9ECEF",
+        percent: 75,
+        textSize: 28,
+        textStyle: 'font-size: 18px;',
+        textY: '107'
+    });
+
+    $("#js").circliful({
+        animation: 1,
+        animationStep: 5,
+        foregroundBorderWidth: 15,
+        foregroundColor: "rgba(212, 18, 18, 0.7)",
+        backgroundBorderWidth: 15,
+        backgroundColor: "#E9ECEF",
+        percent: 72,
+        textSize: 28,
+        textStyle: 'font-size: 18px;',
+        textY: '107'
     });
 });
 
